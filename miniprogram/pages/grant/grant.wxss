@@ -1,0 +1,15 @@
+.AvatarUrl{
+    width: 375px;
+    height:375px;
+    border-radius:50%;
+    overflow:hidden; 
+    text-align: center;
+}
+   
+.nicname {
+    font-size: 16px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}

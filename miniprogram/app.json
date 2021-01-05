@@ -1,0 +1,25 @@
+{
+  
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/grant/grant",
+    "pages/info/info",
+    "pages/intro/intro"
+  ],
+  "window": {
+    "backgroundColor": "#69C3AA",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#69C3AA",
+    "navigationBarTitleText": "小新",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

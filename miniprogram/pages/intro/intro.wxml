@@ -1,0 +1,24 @@
+<view wx:for="{{obj}}"wx:key='item.Id' wx:for-item='i'>
+  
+  <block wx:if="{{nowId == i.Id}}">
+    <view class="introduction">
+      <swiper indicator-dots="true" autoplay="true" interval="3000">
+        <swiper-item>
+          <image class="picture" src="{{i.picture1}}" mode="aspectFit"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="picture" src="{{i.picture2}}" mode="aspectFit"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="picture" src="{{i.picture3}}" mode="aspectFit"></image>
+        </swiper-item>
+
+      </swiper>
+      <view class="context">
+       <view class="context-main"> 简介:</view>
+        <view class="context-info">{{i.chats}}</view>
+      </view>
+
+    </view>
+  </block>
+</view>

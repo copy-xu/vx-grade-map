@@ -1,0 +1,65 @@
+<view style="width: 100%;">
+   
+
+
+<map longitude="{{longitude}}" style="width: 100%; height: 600px;" latitude="{{latitude}}"
+  scale="{{buildlData[isSelectedBuildType].scale}}" markers="{{buildlData[isSelectedBuildType].data}}"
+  bindmarkertap="markertap" label="{{buildlData[isSelectedBuildType].name}}" id="map" data-num="{{buildlData[isSelectedBuildType].data}}">
+
+    <cover-view class="chatroom">
+      <cover-image src="/img/留言板.png" bindtap="navitap" id="1"></cover-image>
+     
+    </cover-view>
+
+  <cover-view><cover-image bindtap="dingwei"  src="/img/location.png" class="img">
+  </cover-image>
+  </cover-view>
+    
+</map>
+<scroll-view scroll-y="true" scroll-into-view="focusPointId"class="top-swich" >
+    
+    <view wx:for="{{buildlData}}" wx:key="id" id="{{index}}" > 
+      <view style="color:{{item.fId==currentItemId?'#e98f36':'#000'}}" data-num="{{item.fId}}" class="box" bindtap="changePage">
+      
+      <image src="{{item.goodsImg}}"></image>
+      <span class="">{{item.name}}</span> 
+    
+     
+     
+        
+     
+    </view>
+  </view>
+</scroll-view>
+
+
+</view>
+
+
+
+
+
+
+<!-- 功能代码 -->
+<!-- 
+
+
+<block wx:if="{{choosemakerId >= 0}}">
+  <view class="main-info">
+  <view wx:for="{{obj}}"wx:key='item.Id' wx:for-item='i'>
+    <block wx:if="{{choosemakerId == i.Id}}">
+      <view class="textstyle">{{i.info}}</view>
+      <view class="number">宿管电话：{{i.number}}</view>
+    </block>
+  </view>
+</view>
+</block>
+
+</view> -->
+
+      <!-- <navigator class="navigatorstyle" url="/pages/chat/chat" open-type="navigate" hover-class="other-navigator-hover">
+        新生聊天室</navigator>
+      <navigator class="navigatorstyle" url="/pages/intro/intro?id=0" open-type="navigate"
+        hover-class="other-navigator-hover">图书馆介绍</navigator>
+      <navigator class="navigatorstyle" url="/pages/intro/intro?id=1" open-type="navigate"
+        hover-class="other-navigator-hover">青海大学介绍</navigator> -->

@@ -1,0 +1,68 @@
+.info{
+  width: 100%;
+  height: 100%;
+  /* background-image:url(https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/8cb1cb134954092373b4a60c9158d109b2de49e7.jpg); */
+}
+
+.box1{
+  
+ background-color:#f0efeb;
+  display: flex;
+  position: absolute;
+ top:350rpx;
+  width: 100%;
+height: 100%;
+ 
+ 
+  
+}
+
+.box2{
+  font-size: 25px;
+  color:#050a11;
+  font-weight: 400;
+  position: relative;
+  
+  width: 100%;
+  height: 70rpx;
+  margin:16rpx ;
+ 
+
+  
+  
+}
+.box2_1{
+ 
+ 
+ 
+  position: relative;
+  
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+
+  border-bottom: 1rpx solid #ffd166;
+  
+}
+.background{
+  width: 100%;
+  height: 350rpx;
+  top:0rpx;
+  position: relative;
+}
+.text{
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  font-weight:400;
+  top:100rpx;
+  left:25rpx;
+}
+.text1{
+  position: absolute;
+  font-size: 17px;
+  text-align: center;
+  font-weight:300;
+  top:145rpx;
+  margin:20rpx ;
+}

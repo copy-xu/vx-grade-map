@@ -1,0 +1,28 @@
+<view class="info">
+
+
+ 
+  <swiper indicator-dots="true" autoplay="true" interval="3000" class="background">
+    <block wx:for="{{market.img}}">
+    <swiper-item>
+      <image src="{{item}}" class="background"/>
+    </swiper-item>
+  </block>
+  </swiper>
+  <view class="box1"> 
+    <view class="box2_1">
+      <view class="box2">
+        {{market.name}}
+      </view>
+    </view>
+    <view class="text">
+       简介:
+    </view>
+    <view class="text1">
+      {{market.description}}
+    </view>
+  </view>
+   
+ 
+
+</view>
