@@ -1,5 +1,5 @@
 {
-  "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
+  "desc": "那个聊天室我还没弄懂呀,是借鉴的别人的",
   "rules": [{
     "action": "allow",
     "page": "*"
