@@ -30,7 +30,7 @@ var map= [
           "cloud://qingxiu1-1gdfqfwv9aa479b5.7169-qingxiu1-1gdfqfwv9aa479b5-1304658969/介绍/图书馆1.jpg",
           "cloud://qingxiu1-1gdfqfwv9aa479b5.7169-qingxiu1-1gdfqfwv9aa479b5-1304658969/介绍/图书馆2.jpg"
         ],
-        "description": "化工楼，新建的化学楼"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        "description": "化工楼，新建的化工楼"
       },
       {
         "name": "农牧楼",
@@ -1360,7 +1360,6 @@ Page({
       }
     })
   },
-
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({
@@ -1390,23 +1389,16 @@ Page({
 //定位
   dingwei:function(){
     var that=this;
-console.log(23234234325)
   wx.getLocation({
-
    type: 'gcj02',
-
    success: function(res) {
-    
     that.setData({
-
      latitude:res.latitude,
      scale:16.4,
      longitude:res.longitude
-
     })
-    console.log(res.latitude)
-    console.log(res.longitude)
-
+   //console.log(res.latitude)
+   // console.log(res.longitude)
    }
 
   })
@@ -1416,13 +1408,10 @@ console.log(23234234325)
     
     this.setData({
       currentItemId:event.currentTarget.dataset.num,
-  
       isSelectedBuildType: event.currentTarget.dataset.num-1,
-     
       longitude:map[event.currentTarget.dataset.num-1].longitude,
       latitude:map[event.currentTarget.dataset.num-1].latitude,
       scale: 16,
-      focusPointId: event.currentTarget.dataset.num-1
     });
     
   },
@@ -1432,16 +1421,12 @@ console.log(23234234325)
   
     var mark=res.currentTarget.dataset.num;
     var markerId=res.detail.markerId;
-    var name=mark[markerId].name;
-    var des=mark[markerId].description;
-    var Src=mark[markerId].img;
-    let temp=JSON.stringify(mark[markerId])
-    console.log(temp)
+    
+    let temp=JSON.stringify(mark[markerId])//作用是把数组转变成可以在网页传递中的参数进行传递
+
         wx.navigateTo({
           url: "/pages/info/info?mar="+temp,
         })
-      
-      
     },
 //聊天室跳转
   navitap:function(){

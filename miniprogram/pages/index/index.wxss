@@ -6,11 +6,10 @@
   text-align: center;
   line-height: 0.1rpx;
   letter-spacing:1;
-  font-size: 21rpx;
+  font-size: 21.7rpx;
   font-weight: 600;
-  padding: 14rpx 14rpx;
-  background-color: rgba(240, 231, 231, 0.884);
-  border-right: 1rpx solid lightgray;
+  padding: 13rpx 15rpx;
+  background-color: #69C3AA;
 }
  
 .box>image {
@@ -27,7 +26,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 110rpx;
+  width: 125rpx;
   height: 500rpx;
   border-radius: 15px;
   position:absolute;

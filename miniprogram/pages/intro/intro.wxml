@@ -1,3 +1,5 @@
+
+<!-- 青海大学介绍页面 -->
 <view wx:for="{{obj}}"wx:key='item.Id' wx:for-item='i'>
   
   <block wx:if="{{nowId == i.Id}}">

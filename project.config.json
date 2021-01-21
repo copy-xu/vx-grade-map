@@ -43,7 +43,7 @@
   },
   "compileType": "miniprogram",
   "appid": "wxfcd03662098f46eb",
-  "projectname": "小新小心",
+  "projectname": "%E5%B0%8F%E6%96%B0%E5%B0%8F%E5%BF%83",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
@@ -59,45 +59,14 @@
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
-        },
-        {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/chat/chat",
-          "pathName": "pages/chat/chat",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/grant/grant",
-          "pathName": "pages/grant/grant",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/index/index",
+          "name": "pages/start/start",
           "pathName": "pages/start/start",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/info/info",
-          "pathName": "pages/info/info",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/start/start",
           "pathName": "pages/start/start",
-          "query": "",
           "scene": null
         }
       ]

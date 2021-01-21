@@ -2,9 +2,8 @@
   
   "pages": [
     "pages/start/start",
-    "pages/index/index",
-    "pages/chat/chat",
     "pages/grant/grant",
+    "pages/index/index",
     "pages/info/info",
     "pages/intro/intro"
   ],

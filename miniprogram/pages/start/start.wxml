@@ -1,15 +1,15 @@
-<!--start.wxml-->
+<!--最开始页面-->
+
 <view class="container">
     <image class="title" src="/img/more/title8.png"></image>
     <view class="content">
+    <!-- 波浪 -->
       <view class="hd" style="transform:rotateZ(0);">
-        
         <image class="wave" src="/img/more/wave.png" mode="aspectFill"></image>
         <image class="wave wave-bg" src="/img/more/wave.png" mode="aspectFill"></image>
       </view>
       <view class="bd">
          <image class="smalltitle" src="/img/more/t2.png"></image>
-        
         <view >
           <view class="smalltitle1"> </view>
           <view class="confirm-btn" bindtap='goToIndex' id="1">青海大学</view>

@@ -1,36 +1,40 @@
+<!-- 主页面,地图页面 -->
+
 <view style="width: 100%;">
-   
+
+  <map longitude="{{longitude}}" style="width: 100%; height: 600px;" latitude="{{latitude}}"
+    scale="{{buildlData[isSelectedBuildType].scale}}" markers="{{buildlData[isSelectedBuildType].data}}"
+    bindmarkertap="markertap" label="{{buildlData[isSelectedBuildType].name}}" id="map"
+    data-num="{{buildlData[isSelectedBuildType].data}}">
 
 
-<map longitude="{{longitude}}" style="width: 100%; height: 600px;" latitude="{{latitude}}"
-  scale="{{buildlData[isSelectedBuildType].scale}}" markers="{{buildlData[isSelectedBuildType].data}}"
-  bindmarkertap="markertap" label="{{buildlData[isSelectedBuildType].name}}" id="map" data-num="{{buildlData[isSelectedBuildType].data}}">
-
-    <cover-view class="chatroom">
-      <cover-image src="/img/留言板.png" bindtap="navitap" id="1"></cover-image>
-     
-    </cover-view>
-
-  <cover-view><cover-image bindtap="dingwei"  src="/img/location.png" class="img">
-  </cover-image>
+  </map>
+<!-- cover-view 和scroll-view 不要放在地图组件的里面,否则真机调试时无法进行点击,图片也被覆盖了 -->
+  <cover-view class="chatroom">
+    <cover-image src="/img/留言板.png" bindtap="navitap" id="1"></cover-image>
   </cover-view>
-    
-</map>
-<scroll-view scroll-y="true" scroll-into-view="focusPointId"class="top-swich" >
-    
-    <view wx:for="{{buildlData}}" wx:key="id" id="{{index}}" > 
-      <view style="color:{{item.fId==currentItemId?'#e98f36':'#000'}}" data-num="{{item.fId}}" class="box" bindtap="changePage">
-      
-      <image src="{{item.goodsImg}}"></image>
-      <span class="">{{item.name}}</span> 
-    
-     
-     
-        
-     
+
+
+  <!-- 定位的作用真机调试的时候可以体现出来 -->
+  <cover-view class="img">
+    <cover-image bindtap="dingwei" src="/img/location.png">
+    </cover-image>
+  </cover-view>
+
+  <scroll-view scroll-y="true" scroll-into-view="focusPointId" class="top-swich">
+
+    <view wx:for="{{buildlData}}" wx:key="id" id="{{index}}">
+      <!-- style    的作用是用来进行点击变色的 -->
+      <!-- data-num 的作用是在'changePage'中传递过去的参数num -->
+      <view style="color:{{item.fId==currentItemId?'#e98f36':'#000'}}" data-num="{{item.fId}}" class="box"
+        bindtap="changePage">
+
+        <image ></image>
+        <view >{{item.name}}</view>
+
+      </view>
     </view>
-  </view>
-</scroll-view>
+  </scroll-view>
 
 
 </view>
@@ -57,7 +61,7 @@
 
 </view> -->
 
-      <!-- <navigator class="navigatorstyle" url="/pages/chat/chat" open-type="navigate" hover-class="other-navigator-hover">
+<!-- <navigator class="navigatorstyle" url="/pages/chat/chat" open-type="navigate" hover-class="other-navigator-hover">
         新生聊天室</navigator>
       <navigator class="navigatorstyle" url="/pages/intro/intro?id=0" open-type="navigate"
         hover-class="other-navigator-hover">图书馆介绍</navigator>
